@@ -1,0 +1,60 @@
+@font-face {
+    font-family: comic;
+    src: url("COMIC.TTF") format("truetype");
+}
+body {
+    background-color: rgb(206, 118, 147);
+}
+input, label {
+    font-family: comic;
+    font-size: 20px;
+}
+.setting {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 30%);
+}
+
+.countdown {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#number {
+    text-align: center;
+    border: none;
+    width: 60px;
+}
+
+#b_start, #b_stop {
+    width: 100px;
+    height: 50px;
+    background-color: white;
+    border-radius: 10px;
+    border-width: 3px;
+    border-color: rgb(92, 80, 255);
+}
+
+#b_start:hover:enabled, #b_stop:hover:enabled {
+    background-color: rgb(185, 185, 185);
+}
+
+#b_start:active:enabled, #b_stop:active:enabled {
+    background-color: rgb(143, 143, 143);
+}
+
+#number_label {
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
+    text-align: center;
+    display:inline-block;
+    border-radius: 30px;
+    background-color: white;
+    padding: 50px;
+}
