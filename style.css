@@ -20,15 +20,13 @@ input, label {
 
 .countdown {
     position: absolute;
-    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 200%);
 }
 
 #number {
     text-align: center;
     border: none;
-    width: 60px;
 }
 
 #b_start, #b_stop {
