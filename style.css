@@ -15,13 +15,13 @@ input, label {
     border-radius: 10px;
     position: absolute;
     left: 50%;
-    transform: translate(-50%, 30%);
+    transform: translate(-50%, 30px);
 }
 
 .countdown {
     position: absolute;
     left: 50%;
-    transform: translate(-50%, 200%);
+    transform: translate(-50%, 200px);
 }
 
 #number {
