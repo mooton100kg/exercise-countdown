@@ -2,6 +2,12 @@
     font-family: mk;
     src: url("../src/MILK TEA-NORMAL.TTF") format("truetype");
 }
+html, body {
+    max-height: 100%;
+    overflow-y: hidden;
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 body {
     margin: 0;
@@ -21,6 +27,6 @@ iframe {
     display: block;       
     background: #000;
     border: none;        
-    height: 100vh;        
+    height: 90vh;        
     width: 100vw;
 }
