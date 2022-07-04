@@ -1,0 +1,65 @@
+@font-face {
+    font-family: comic;
+    src: url("../src/COMIC.TTF") format("truetype");
+}
+
+body {
+    background-color: rgb(206, 118, 147);
+}
+
+input, label {
+    font-family: comic;
+    font-size: 2vw;
+}
+
+.setting {
+    width: 30vw;
+    background-color: white;
+    padding: 2vw;
+    border-radius: 1vw;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 1vw);
+}
+
+.countdown {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#button {
+    width: 14vw;
+    height: 5vw;
+    background-color: white;
+    border-radius: 1vw;
+    border-width: 0.3vw;
+    border-color: rgb(92, 80, 255);
+}
+
+#number {
+    text-align: center;
+    width: 15vw;
+    border: none;
+}
+
+#button:hover{
+    background-color: rgb(185, 185, 185);
+}
+
+#button:active{
+    background-color: rgb(143, 143, 143);
+    border-width: 0.5vw;
+}
+
+#number_label {
+    width: 5vw;
+    height: 5vw;
+    font-size: 5vw;
+    text-align: center;
+    display:inline-block;
+    border-radius: 3vw;
+    background-color: white;
+    padding: 5vw;
+}

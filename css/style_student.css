@@ -1,0 +1,26 @@
+@font-face {
+    font-family: mk;
+    src: url("../src/MILK TEA-NORMAL.TTF") format("truetype");
+}
+
+body {
+    margin: 0;
+    background-color: grey;
+}
+
+#selector {
+    width:30vw;
+    text-align: center;
+    font-family: mk;
+    font-size: 3vw;
+    border-radius: 1vw;
+    border: none;
+}
+
+iframe {
+    display: block;       
+    background: #000;
+    border: none;        
+    height: 100vh;        
+    width: 100vw;
+}

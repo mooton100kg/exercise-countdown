@@ -1,0 +1,35 @@
+@font-face {
+    font-family: mk;
+    src: url("../src/MILK TEA-NORMAL.TTF") format("truetype");
+}
+
+body {
+    background-color: rgb(255, 165, 61);
+}
+
+input {
+    width: 50vw;
+    height: 10vw;
+    font-family: mk;
+    font-size: 5vw;
+    background-color: white;
+    border: 0.5vw solid rgb(255, 136, 0);
+    border-radius: 2vw;
+    margin: 2vw;
+}
+
+input:hover {
+    background-color: rgb(214, 214, 214);
+}
+
+input:active {
+    background-color: rgb(167, 167, 167);
+    border-width: 0.8vw;
+}
+
+.button {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
