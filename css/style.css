@@ -10,6 +10,7 @@ html,body {
     flex-wrap: wrap;
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 100%;
+    background-color: #333;
 }
 
 .col {
