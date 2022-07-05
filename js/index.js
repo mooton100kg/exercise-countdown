@@ -1,4 +1,3 @@
-let show = false;
 let d = document.getElementsByClassName("d");
 
 function exercise_f() {
@@ -17,3 +16,14 @@ function study_f() {
         }
     }
 }
+
+function d_one() {
+    window.open("https://drive.google.com/file/d/1C8LjyhcLhfoimBOIFOj5-iHrgMLAw4jO/view?usp=sharing");
+}
+function d_two() {
+    window.open("https://drive.google.com/file/d/1iKXDr0aig61uG7A-GFg0IHAS5MK5oOQF/view?usp=sharing");
+}
+function d_three() {
+    window.open("https://drive.google.com/file/d/1R4NwbsaT5kWMue3DUNxp63QzAuTdlYXG/view?usp=sharing");
+}
+
