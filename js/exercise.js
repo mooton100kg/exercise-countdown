@@ -1,38 +1,33 @@
 timer = document.getElementById("number").value;
-button = document.getElementById("button");
-let color;
-let audio = new Audio("../src/note_E.mp3");
-let count;
+let count, color;
 
 function updateTimer(){
     timer--;
-    if (timer <= 0 && color == "palevioletred"){
-        audio.play();
+    if (timer <= 0 && color == "#333"){
         timer = 3;
-        color = "greenyellow";
+        color = "rgb(200, 200, 200)";
         document.body.style.backgroundColor = color;
     }
-    else if (timer <= 0 && color == "greenyellow"){
-        audio.play();
+    else if (timer <= 0 && color == "rgb(200, 200, 200)"){
         timer = document.getElementById("number").value;
-        color = "palevioletred";
+        color = "#333";
         document.body.style.backgroundColor = color;
     }
     document.getElementById("number_label").innerHTML = timer;
 }
 
-
-button.onclick = function(){
-    if (button.value == "Start"){
-        color = "palevioletred";
+function start(){
+    var button = document.getElementById("start");
+    if (button.innerText == "START"){
+        color = "#333";
         document.body.style.backgroundColor = color;
-        button.value = "Stop";
+        button.innerText = "STOP";
         document.getElementById("number_label").innerHTML = timer;
         count = setInterval(updateTimer, 1000);
     }
-    else if (button.value == "Stop"){
+    else if (button.innerText == "STOP"){
         clearInterval(count);
-        button.value = "Start";
+        button.innerText = "START";
         timer = document.getElementById("number").value;
         document.getElementById("number_label").innerHTML = 0;
     }

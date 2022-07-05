@@ -1,65 +1,82 @@
-@font-face {
-    font-family: comic;
-    src: url("../src/COMIC.TTF") format("truetype");
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+
+
+html,body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 150%;
+    background-color: #333;
 }
 
-body {
-    background-color: rgb(206, 118, 147);
+.container-1 {height: 20%;}
+.container-2 {height: 80%;}
+
+.col {
+    height: 100%;
 }
 
-input, label {
-    font-family: comic;
-    font-size: 2vw;
-}
 
-.setting {
-    width: 30vw;
-    background-color: white;
-    padding: 2vw;
-    border-radius: 1vw;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 1vw);
-}
-
-.countdown {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-
-#button {
-    width: 14vw;
-    height: 5vw;
-    background-color: white;
-    border-radius: 1vw;
-    border-width: 0.3vw;
-    border-color: rgb(92, 80, 255);
-}
-
-#number {
+div[class*=container] {
     text-align: center;
-    width: 15vw;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    position: relative;
+    color: white;
+    width: 150px;
+    height: 64px;
+    line-height: 64px;
+    transition: all 0.3s;
+    margin: 10px;
+}
+
+.btn::before, .btn::after {
+    content: '';
+    position: absolute;
+    transition: all 0.3s;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.btn::before {
+    transition: all 0.3s;
+    border: 1px solid rgba(255,255,255,0.5);
+}
+
+.btn::after {
+    opacity: 0;
+    border: 3px solid rgba(255,255,255,0.1);
+    transition: all 0.3s;
+}
+
+.btn:hover::after {
+    opacity: 1;
+    transform: translate(3px, 6px);
+}
+
+input {
+    width: 70px;
+    font-size: 80%;
+    text-align: center;
+    background-color: rgba(255,255,255,1);
     border: none;
-}
-
-#button:hover{
-    background-color: rgb(185, 185, 185);
-}
-
-#button:active{
-    background-color: rgb(143, 143, 143);
-    border-width: 0.5vw;
+    color: rgba(0,0,0);
+    
 }
 
 #number_label {
-    width: 5vw;
-    height: 5vw;
-    font-size: 5vw;
-    text-align: center;
-    display:inline-block;
-    border-radius: 3vw;
-    background-color: white;
-    padding: 5vw;
+    font-size: 200%;
+    color: white;
 }

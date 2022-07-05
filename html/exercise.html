@@ -9,13 +9,19 @@
     <link rel="stylesheet" href="../css/style_exercise.css">
 </head>
 <body>
-    <div class="setting">
-        <input type="number" id="number" max="30" min="0" value="10">
-        <input type="button" id="button" value="Start">
+    <div class="col">
+        <div class="container-1">
+            <div class="btn btn-one" onclick="start()">
+                <span id="start">START</span>
+            </div>
+            <input type="number" id="number" min="0" max="30" value="10">
+        </div>
+
+        <div class="container-2">
+            <label id="number_label">0</label>
+        </div>
     </div>
-    <div class="countdown">
-        <label id="number_label"></label>
-    </div>
+
     <script src="../js/exercise.js"></script>
 </body>
 </html>
