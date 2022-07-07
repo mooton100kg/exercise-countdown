@@ -11,6 +11,7 @@ html,body {
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 100%;
     background-color: #333;
+    color: white;
 }
 
 .col {
@@ -27,13 +28,14 @@ div[class*=container] {
     background: #333;
 }
 
-.container-1 { height: 40%;}
-.container-2 { height: 20%;}
-.container-3 { height: 40%;}
+.container-1 { height: 9%;}
+.container-2 { height: 37%;}
+.container-3 { height: 17%;}
+.container-4 { height: 37%;}
 
 .btn {
+    font-size: 140%;
     position: relative;
-    color: white;
     width: 256px;
     height: 64px;
     line-height: 64px;
@@ -71,15 +73,22 @@ div[class*=container] {
     position: relative;
 }
 
+.container-3 { 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 .d {
+    flex: 40%;
+    margin: 5px;
     display: none;
     position: relative;
-    color: white;
-    width: 150px;
     height: 64px;
     line-height: 64px;
     transition: all 0.3s;
     z-index: 1;
+    font-size: 100%;
 }
 
 .d::before, .d::after {
@@ -87,11 +96,13 @@ div[class*=container] {
     position: absolute;
     transition: all 0.3s;
     bottom: 0;
-    left: 10%;
-    width: 30%;
+    left: 25%;
+    width: 70px;
     height: 100%;
     z-index: 1;
 }
+
+.d-three::before, .d-three::after {left: 38%;}
 
 .d::before {
     z-index: 1;
@@ -100,7 +111,6 @@ div[class*=container] {
 
 .d::after {
     z-index: 1;
-    left: 20%;
     width: 0;
     background: rgba(255, 255, 255, 0.05);
     opacity: 0;
@@ -108,6 +118,15 @@ div[class*=container] {
 
 .d:hover::after {
     opacity: 1;
-    width: 70%;
+    width: 60%;
 }
+
+.d-three:hover::after {width: 30%;}
+
+.clock-time {
+    font-size: 200%; 
+    font-weight: 800;
+}
+
+.clock-ampm {font-size: 100%;} 
 

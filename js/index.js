@@ -27,3 +27,40 @@ function d_three() {
     window.open("https://drive.google.com/file/d/1R4NwbsaT5kWMue3DUNxp63QzAuTdlYXG/view?usp=sharing");
 }
 
+class DigitalClock {
+    constructor(element) {
+        this.element = element;
+    }
+
+    start() {
+        this.update();
+        setInterval(() => {
+            this.update();
+        }, 1000);
+    }
+
+    update() {
+        const parts = this.getTimeParts();
+        const minuteFormatted = parts.minute.toString().padStart(2, "0");
+        const timeFormatted = `${parts.hour}:${minuteFormatted}`;
+        const ampm = parts.isAm ? "AM" : "PM";
+
+        this.element.querySelector(".clock-time").textContent = timeFormatted;
+        this.element.querySelector(".clock-ampm").textContent = ampm;
+    }
+
+    getTimeParts(){
+        const now = new Date();
+        return {
+            hour: now.getHours() % 12 || 12,
+            minute: now.getMinutes(),
+            isAm: now.getHours() < 12
+        };
+    }
+}
+
+const ClockElement = document.querySelector(".clock");
+const ClockObject = new DigitalClock(ClockElement);
+
+
+ClockObject.start();
