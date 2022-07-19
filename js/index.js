@@ -19,6 +19,8 @@ select.addEventListener('change', function handleChange(event) {
         window.open("https://drive.google.com/file/d/1ABf7oubU26y5uqLImd9M9c9PTcV8H6Ob/view?usp=sharing");
     else if (value == "ge")
         window.open("https://drive.google.com/file/d/1eqSSNEBikWc2dl5D6tF54V8Iezvsrutp/view?usp=sharing");
+    else if (value == "timeTable")
+        window.open("https://drive.google.com/file/d/19XUvuLATvzRwu7Vt4llwVN_kgRKmYVrf/view?usp=sharing");
         
 });
 
