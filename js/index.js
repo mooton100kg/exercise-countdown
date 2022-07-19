@@ -4,28 +4,23 @@ function exercise_f() {
     window.location.href = "html/exercise.html";
 }
 
-function study_f() {
-    if (d[0].style.display === "block"){
-        for (let i = 0; i < d.length; i++){
-            d[i].style.display = "none";
-        }
-    }
-    else {
-        for (let i = 0; i < d.length; i++){
-            d[i].style.display = "block";
-        }
-    }
-}
+const select = document.getElementById('dowload');
 
-function d_one() {
-    window.open("https://drive.google.com/file/d/1C8LjyhcLhfoimBOIFOj5-iHrgMLAw4jO/view?usp=sharing");
-}
-function d_two() {
-    window.open("https://drive.google.com/file/d/1iKXDr0aig61uG7A-GFg0IHAS5MK5oOQF/view?usp=sharing");
-}
-function d_three() {
-    window.open("https://drive.google.com/file/d/1R4NwbsaT5kWMue3DUNxp63QzAuTdlYXG/view?usp=sharing");
-}
+select.addEventListener('change', function handleChange(event) {
+    var value = event.target.value;
+    
+    if (value == "allDoc")
+        window.open("https://drive.google.com/file/d/1C8LjyhcLhfoimBOIFOj5-iHrgMLAw4jO/view?usp=sharing");
+    else if (value == "detail")
+        window.open("https://drive.google.com/file/d/1R4NwbsaT5kWMue3DUNxp63QzAuTdlYXG/view?usp=sharing");
+    else if (value == "year1")
+        window.open("https://drive.google.com/file/d/1iKXDr0aig61uG7A-GFg0IHAS5MK5oOQF/view?usp=sharing");
+    else if (value == "calendar65")
+        window.open("https://drive.google.com/file/d/1ABf7oubU26y5uqLImd9M9c9PTcV8H6Ob/view?usp=sharing");
+    else if (value == "ge")
+        window.open("https://drive.google.com/file/d/1eqSSNEBikWc2dl5D6tF54V8Iezvsrutp/view?usp=sharing");
+        
+});
 
 class DigitalClock {
     constructor(element) {

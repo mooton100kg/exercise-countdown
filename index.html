@@ -24,22 +24,16 @@
         </div>
         
         <div class="container-3">
-            <div class="d d-one" onclick="d_one()">
-                <span>ALL DOCUMENT</span>
-            </div>
-            <div class="d d-two" onclick="d_two()">
-                <span>STUDY PLAN: YEAR 1</span>
-            </div>
-            <div class="d d-three" onclick="d_three()">
-                <span>COURSE DETAILS</span>
-            </div>
+            <select name="dowload" id="dowload">
+                <option disabled selected value>SELECT A FILE</option>
+                <option value="allDoc">ALL DOCUMENT</option>
+                <option value="year1">STUDY PLAN: YEAR1</option>
+                <option value="detail">COURSE DETAILS</option>
+                <option value="calendar65">CALENDAR 65</option>
+                <option value="ge">GENERAL COURSE</option>
+            </select>
         </div>
 
-        <div class="container-4">
-            <div class="btn btn-two" onclick="study_f()">
-                <span>STUDY</span>
-            </div>
-        </div>
     </div>
     <script src="js/index.js"></script>
 </body>

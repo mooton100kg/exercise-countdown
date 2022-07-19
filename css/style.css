@@ -28,10 +28,9 @@ div[class*=container] {
     background: #333;
 }
 
-.container-1 { height: 9%;}
-.container-2 { height: 37%;}
-.container-3 { height: 17%;}
-.container-4 { height: 37%;}
+.container-1 { height: 10%;}
+.container-2 { height: 45%;}
+.container-3 { height: 45%;}
 
 .btn {
     font-size: 140%;
@@ -69,60 +68,6 @@ div[class*=container] {
     transform: translate(3px, 6px);
 }
 
-.btn-two {
-    position: relative;
-}
-
-.container-3 { 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.d {
-    flex: 40%;
-    margin: 5px;
-    display: none;
-    position: relative;
-    height: 64px;
-    line-height: 64px;
-    transition: all 0.3s;
-    z-index: 1;
-    font-size: 100%;
-}
-
-.d::before, .d::after {
-    content: '';
-    position: absolute;
-    transition: all 0.3s;
-    bottom: 0;
-    left: 25%;
-    width: 70px;
-    height: 100%;
-    z-index: 1;
-}
-
-.d-three::before, .d-three::after {left: 38%;}
-
-.d::before {
-    z-index: 1;
-    background: rgba(255, 255, 255, 0.1);
-}
-
-.d::after {
-    z-index: 1;
-    width: 0;
-    background: rgba(255, 255, 255, 0.05);
-    opacity: 0;
-}
-
-.d:hover::after {
-    opacity: 1;
-    width: 60%;
-}
-
-.d-three:hover::after {width: 30%;}
-
 .clock-time {
     font-size: 200%; 
     font-weight: 800;
@@ -130,3 +75,13 @@ div[class*=container] {
 
 .clock-ampm {font-size: 100%;} 
 
+#dowload {
+    background-color: #333;
+    width: 256px;
+    height: 64px;
+    text-align: center;
+    color: white;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 130%;
+    border: 1px solid rgba(255,255,255,0.5);
+}
