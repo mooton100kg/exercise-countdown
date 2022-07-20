@@ -68,6 +68,19 @@ div[class*=container] {
     transform: translate(3px, 6px);
 }
 
+.b-enter {
+    margin: 20px;
+    padding: 10px;
+    border: 3px solid rgba(255,255,255,0.2);
+    background-color: rgba(255,255,255,0.05);
+    transition: all 0.3s;
+}
+
+.b-enter:hover {
+    border: 3px solid rgba(255,255,255,0.5);
+    background-color: #333;
+}
+
 .clock-time {
     font-size: 200%; 
     font-weight: 800;
@@ -77,7 +90,7 @@ div[class*=container] {
 
 #dowload {
     background-color: #333;
-    width: 256px;
+    width: 230px;
     height: 64px;
     text-align: center;
     color: white;

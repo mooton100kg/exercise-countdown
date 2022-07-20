@@ -24,7 +24,7 @@
         </div>
         
         <div class="container-3">
-          <select name="dowload" id="dowload" onchange="change(this)">
+          <select name="dowload" id="dowload" onchange="change()">
                 <option disabled selected value>SELECT A FILE</option>
                 <option value="allDoc">ALL DOCUMENT</option>
                 <option value="year1">STUDY PLAN: YEAR1</option>
@@ -32,8 +32,10 @@
                 <option value="calendar65">CALENDAR 65</option>
                 <option value="ge">GENERAL COURSE</option>
                 <option value="timeTable">TIME TABLE</option>
-            </select>
-            <label id="l">123</label>
+              </select>
+          <div class="b-enter" onclick="change()">
+            <span>ENTER</span>
+          </div>
         </div>
 
     </div>

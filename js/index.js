@@ -6,8 +6,8 @@ function exercise_f() {
 
 const select = document.getElementById('dowload');
 
-function change(obj) {
-    var value = obj.value;
+function change() {
+    var value = select.value;
 
     if (value == "allDoc")
         window.open("https://drive.google.com/file/d/1C8LjyhcLhfoimBOIFOj5-iHrgMLAw4jO/view?usp=sharing");
