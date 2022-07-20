@@ -6,9 +6,9 @@ function exercise_f() {
 
 const select = document.getElementById('dowload');
 
-select.addEventListener('change', function handleChange(event) {
-    var value = event.target.value;
-    
+function change(obj) {
+    var value = obj.value;
+
     if (value == "allDoc")
         window.open("https://drive.google.com/file/d/1C8LjyhcLhfoimBOIFOj5-iHrgMLAw4jO/view?usp=sharing");
     else if (value == "detail")
@@ -22,7 +22,7 @@ select.addEventListener('change', function handleChange(event) {
     else if (value == "timeTable")
         window.open("https://drive.google.com/file/d/19XUvuLATvzRwu7Vt4llwVN_kgRKmYVrf/view?usp=sharing");
         
-});
+};
 
 class DigitalClock {
     constructor(element) {
