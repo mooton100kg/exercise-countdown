@@ -21,7 +21,7 @@ function change(obj) {
         window.open("https://drive.google.com/file/d/1eqSSNEBikWc2dl5D6tF54V8Iezvsrutp/view?usp=sharing");
     else if (value == "timeTable")
         window.open("https://drive.google.com/file/d/19XUvuLATvzRwu7Vt4llwVN_kgRKmYVrf/view?usp=sharing");
-        
+    document.getElementById("l").innerHTML = value;
 };
 
 class DigitalClock {
