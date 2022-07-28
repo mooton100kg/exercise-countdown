@@ -21,7 +21,14 @@ function change() {
         window.open("https://drive.google.com/file/d/1eqSSNEBikWc2dl5D6tF54V8Iezvsrutp/view?usp=sharing");
     else if (value == "timeTable")
         window.open("https://drive.google.com/file/d/19XUvuLATvzRwu7Vt4llwVN_kgRKmYVrf/view?usp=sharing");
-    document.getElementById("l").innerHTML = value;
+    else if (value == "map")
+        window.open("https://drive.google.com/file/d/1J5lG2l0hsn2-zGcZK94u8tP2bPtxzoIy/view?usp=sharing");
+    else if (value == "thu")
+        window.open("https://drive.google.com/file/d/1pNyA14Y31alzNgRduiEZafnOr3s8--df/view?usp=sharing");
+    else if (value == "fri")
+        window.open("https://drive.google.com/file/d/1PfSxRDuZNSpcoiCjTiCZ02ZwUlKdT9Tt/view?usp=sharing");
+    else if (value == "guidemap")
+        window.open("https://drive.google.com/file/d/1Dxxq0_KF8YpfD3aB9Yo6TwurUmB9zn6r/view?usp=sharing");
 };
 
 class DigitalClock {
