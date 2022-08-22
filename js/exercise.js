@@ -4,7 +4,7 @@ let count, color;
 function updateTimer(){
     timer--;
     if (timer <= 0 && color == "#333"){
-        timer = 3;
+        timer = 5;
         color = "rgb(200, 200, 200)";
         document.body.style.backgroundColor = color;
     }
